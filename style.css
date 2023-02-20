@@ -110,3 +110,6 @@
 		.li-home {
 			margin-top: 15px;
 		}
+		html {
+			scroll-behavior: smooth;
+		}
