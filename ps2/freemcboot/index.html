@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+		<!-- REDIRECTION VERS LA PAGE D'ERREUR -->
+		<!--<meta http-equiv="refresh">-->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<!-- LES ELEMENTS SUIVANTS SONT UTILISES POUR LES EMBED (type Discord) -->
+		<meta content="FreeDVDBoot | PS2 Guide" property="og:title"/>
+		<meta content="Installer FMCB à l'aide de FreeDVDBoot" property="og:description"/>
+		<meta content="https://guide.homebrewfrance.fr/ps2/freedvdboot" property="og:url"/>
+		<meta content="https://raw.githubusercontent.com/homebrewfrance/homebrewfrance.github.io/main/IMAGES/favicon.png" property="og:image"/>
+		<!--/-->
+		
+		<title>FreeDVDBoot | PS2 Guide</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://guide.homebrewfrance.fr/style.css">
+        	<link rel="icon" href="https://raw.githubusercontent.com/homebrewfrance/homebrewfrance.github.io/main/IMAGES/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap" rel="stylesheet">
+	</head>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://guide.homebrewfrance.fr/ps2"><img src="https://hbf-files.github.io/ps_icon.png" width="30" height="30"><strong>&ensp; PS2-Guide</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://guide.homebrewfrance.fr/ps2">Accueil <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Guides
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://guide.homebrewfrance.fr/ps2">PS2</a>
+          <a class="dropdown-item" href="https://guide.homebrewfrance.fr/ps3">PS3</a>
+        </div>
+	<li class="nav-item">
+        <a class="nav-link" href="https://homebrewfrance.fr">Le Homebrew France</a>
+      </li>
+  </div>
+  <div class="btn-group">
+  <button type="button" class="btn btn-secondary"><img src="https://hbf-files.github.io/globe.png" width="25" height="25"></button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Français</a>
+    <a class="dropdown-item" href="#">English</a>
+  </div>
+</div>
+</nav>
+		<div class="indicator">
+			<small class="indicatortxt">Le Homebrew France</small><small> > <a class="white-a" href="https://guide.homebrewfrance.fr/ps2"><strong>PS2-Guide</strong></a> > <a class="white-a" href="#">FreeDVDBoot</a></small>
+		</div>
+<body>
+	<div class="indic">
+		<p class="indic-text">Rejoignez <a href="https://homebrewfrance.fr/discord">Le Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+	</div>
+	<div class="indic">
+		<p class="indic-text">N'oubliez pas de lire l'intégralité des pages avant de procéder pour ne pas prendre le risque de manquer une étape.</p>
+	</div>
+	<h2 id="prerequis">Prérequis</h2>
+		<li class="li-home">Une clé USB.</li>
+		<li class="li-home">Une carte mémoire PlayStation 2 avec FreeMCBoot pré-installé.</li>
+  		<ol style="list-style-type:circle;">
+				<li class="li-home"><a class="white-a" href="https://www.amazon.fr/Nouveau-Playstation-McBoot-1-953-m%C3%A9moire/dp/B01M0K5H06/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=EUQAZPX1JHJC&keywords=free+mcboot&qid=1676917299&sprefix=freemcboot%2Caps%2C81&sr=8-5"><u>Carte mémoire FMCB 64MB (18€99)</u></a><img src="https://hbf-files.github.io/cart.png" width="18" height="18"></li>
+				<li class="li-home"><a class="white-a" href="https://www.amazon.fr/Nouveau-Playstation-McBoot-1-953-m%C3%A9moire/dp/B06X9ZSSRK/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=EUQAZPX1JHJC&keywords=free+mcboot&qid=1676917386&sprefix=freemcboot%2Caps%2C81&sr=8-4"><u>Carte mémoire FMCB 32MB (16€99)</u></a><img src="https://hbf-files.github.io/cart.png" width="18" height="18"></li>
+        <li class="li-home"><a class="white-a" href="https://www.amazon.fr/Brand-Playstation-McBoot-1-953-m%C3%A9moire/dp/B071J39L3Q/ref=d_pd_sbs_sccl_2_4/257-7644965-5088248?pd_rd_w=Tl5JO&content-id=amzn1.sym.5dff3cad-8488-40d8-8f9f-5e2c7e20e67a&pf_rd_p=5dff3cad-8488-40d8-8f9f-5e2c7e20e67a&pf_rd_r=KSNXZCW6EA2SKJDTTSKN&pd_rd_wg=K9Xxd&pd_rd_r=5e2dbc4e-73c0-45e3-af9f-0a6e3b45bfd7&pd_rd_i=B071J39L3Q&psc=1"><u>Carte mémoire FMCB 16MB (16€99)</u></a><img src="https://hbf-files.github.io/cart.png" width="18" height="18"></li>
+			</ol>
+	</ul>
+    <ul class="ul-home" style="list-style-type:none;">
+        <li class="li-home"><i>Note : les cartes mémoire ci-dessous ne sont que des recommandations, vous avez le libre arbitre du choix de votre carte mémoire en fonction de votre budget ou de votre site d'achat en ligne de préférence</li>
+          <pre></pre>
+	<h2>I - Préparation de la console</h2>
+	<ul class="ul-home">
+		<li class="li-home">Insérez la carte mémoire contenant FreeMCBoot préinstallé dans votre console PlayStation 2.</li>
+		<li class="li-home">Allumez votre console PlayStation.</li>
+	</ul>
+	<pre></pre>
+	<h2>II - Graver le DVD</h2>
+	<ul class="ul-home" style="list-style-type:none;">
+		<li>Démarrez le logiciel ImgBurn.</li>
+		<img class="check3" src="https://hbf-files.github.io/imgburn.png" width="513" height="353">
+		<li>Sélectionnez "Write Image File To Disc".</li>
+		<img class="check3" src="https://hbf-files.github.io/imgb_write.png">
+	</ul>
+	<ul class="ul-home">
+		<li class="li-home">Cliquez sur l'icône de dossier sous source <img src="https://hbf-files.github.io/imgb_folder.png">.</li>
+		<li class="li-home">Sélectionnez l'ISO FreeDVDBoot selon votre modèle de console dans la section <u><a class="white-a" href="#prerequis">Prérequis</a></u>.</li>
+		<li class="li-home">Sélectionnez votre graveur de CD/DVD.</li>
+		<li class="li-home">Insérez un DVD-R.</li>
+		<li class="li-home">Ajoutez la vitesse la plus basse possible de votre lecteur CD/DVD</li>
+		<li class="li-home">Sélectionnez l'option "Write" en bas à gauche de la fenêtre.</li>
+		<img class="check3" src="https://hbf-files.github.io/imgb_write2.png">
+		<li class="li-home">Attendre la fin du processus de gravure.</li>
+	</ul>
+	<pre></pre>
+	<h2>III - Installation de FreeMCBoot (FMCB)</h2>
+	<p class="accueil">Nous allons maintenant procéder à l'installation du programme "FreeMCBoot" sur votre carte mémoire.</p>
+	<ul class="ul-home">
+		<li class="li-home">Insérez votre carte mémoire dans la fente 1 de votre PlayStation 2 ainsi que votre clé USB.</li>
+		<li class="li-home">Insérez le DVD-R que vous avez précédemment gravé dans le lecteur DVD de votre PlayStation 2.</li>
+		<li class="li-home">Autorisez la console à démarrer sur le DVD.</li>
+	</ul>
+	<ul class="ul-home" style="list-style-type:none;">
+		<li><i>Votre console devrait lancer le logiciel "uLaunchELF".</i></li>
+	</ul>
+	<ul class="ul-home">
+		<li class="li-home">A partir de là, sélectionnez "File Browser" en appuyant sur <img class="button" src="https://hbf-files.github.io/cercle.png" width="20" height="20">.</li>
+		<img class="check3" src="https://hbf-files.github.io/ule-filebrowser.png" width="535" height="399">
+	</ul>
+	<ul class="ul-home" style="list-style-type:none;">
+		<li>Sélectionnez <code>&ensp;mass:/&ensp;</code> en appuyant sur <img class="button" src="https://hbf-files.github.io/cercle.png" width="20" height="20">.</li>
+	</ul>
+	<ul class="ul-home">
+		<img class="check3" src="https://hbf-files.github.io/ule-mass.png" width="535" height="399">
+		<li class="li-home">Sélectionnez le fichier <code>&ensp;fmcbinstaller.elf&ensp;</code>.</li>
+	</ul>
+	<ul class="ul-home" style="list-style-type:none;">
+		<li><i>Le programme FreeMCBoot Installer devrait démarrer.</i></li>
+	</ul>
+	<ul class="ul-home">
+		<li class="li-home">Utilisez <img src="https://hbf-files.github.io/r1.png" width="20" height="20"> et <img src="https://hbf-files.github.io/l1.png" width="20" height="20"> pour naviguer jusqu'au menu "Utilitaire carte mémoire".</li>
+	</ul>
+	<div class="disclaimer">
+		<p class="indic-text">La prochaine étape effacera toutes les données de votre carte mémoire ! Veillez à faire une sauvegarde de cette dernière !</p>
+	</div>
+	<ul class="ul-home">
+		<li class="li-home">Cliquez sur "Formater CM" avec le bouton <img class="button" src="https://hbf-files.github.io/croix.png" width="20" height="20">.</li>
+		<img class="check3" src="https://hbf-files.github.io/fmcb-format.png" width="533" height="399">
+		<li class="li-home">Utilisez <img src="https://hbf-files.github.io/r1.png" width="20" height="20"> et <img src="https://hbf-files.github.io/l1.png" width="20" height="20"> pour naviguer jusqu'au menu "Confirmation" et sélectionnez "Normale".</li>
+		<img class="check3" src="https://hbf-files.github.io/fmcb-install.png" width="533" height="399">
+		<li class="li-home">Autorisez maintenant l'installation à se poursuivre.</li>
+	</ul>
+	<div class="indic">
+		<p class="indic-text">Vous venez à présent d'installer FreeMCBoot sur votre carte mémoire. Vous pouvez poursuivre vers <a href="https://guide.homebrewfrance.fr/finalisation/">fin de l'installation</a>.</p>
+	</div>
+</body>
+	<footer>
+		<p class="footer-p">SOURCE : <a class="white-a" href="https://github.com/homebrewfrance/guide"><img src="https://hbf-files.github.io/github.png" width="20" height="20"> <strong>GITHUB</strong></a></p>
+		<p class="footer-p">&copy 2023 - <a class="white-a" href="https://github.com/homebrewfrance">Le Homebrew France</a></p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
+
+		
