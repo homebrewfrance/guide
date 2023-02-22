@@ -66,6 +66,12 @@
 	<div class="indic">
 		<p class="indic-text">N'oubliez pas de lire l'intégralité des pages avant de procéder pour ne pas prendre le risque de manquer une étape.</p>
 	</div>
+	<p class="home">Si votre PlayStation 2 n'est pas compatible avec FreeDVDBoot, une des alternatives peut être par exemple d'utiliser une carte mémoire PlayStation 2 contenant FreeMCBoot préinstallé/</p>
+	<p class="home">Cependant cette "méthode" comporte deux problèmes principaux :</p>
+	<ul class="ul-home">
+		<li class="li-home">Les cartes mémoires ne sont souvent pas à jour et contiennent une version obsolète de FreeMCBoot.</li>
+		<li class="li-home">Les cartes mémoires ne sont pas officielles.</li>
+	</ul>
 	<h2 id="prerequis">Prérequis</h2>
 	<ul class="ul-home">
 		<li class="li-home">Une clé USB.</li>
@@ -79,71 +85,28 @@
     <ul class="ul-home" style="list-style-type:none;">
         <li class="li-home"><i>Note : les cartes mémoire ci-dessous ne sont que des recommandations, vous avez le libre arbitre du choix de votre carte mémoire en fonction de votre budget ou de votre site d'achat en ligne de préférence.</i></li>
 	</ul>
+	<p class="home">Si vous faites le choix d'acheter l'une des cartes mémoires listées ci-dessous vous pouvez passer à <a href="#preparation">l'étape I</a>.</p>
+	<p class="home">Si vous faites le choix d'acheter une autre carte mémoire, continuez vers <a href="#verification"><u>l'étape II</u></a>.</p>
           <pre></pre>
-	<h2>I - Préparation de la console</h2>
+	<h2 id="preparation">I - Préparation de la console</h2>
 	<ul class="ul-home">
 		<li class="li-home">Insérez la carte mémoire contenant FreeMCBoot préinstallé dans votre console PlayStation 2.</li>
 		<li class="li-home">Allumez votre console PlayStation.</li>
+		<li class="li-home">Vous devriez arriver sur le menu suivant :</li>
+		<img class="check3" src="https://hbf-files.github.io/fmcb-menu.png">
+		<li class="li-home">Vous pouvez maintenant passer à <a href="#suppression"><u>l'étape V</u></a>.</li>
 	</ul>
 	<pre></pre>
-	<h2>II - Graver le DVD</h2>
+	<h2 id="verification">III - Vérifier votre version de FreeMCBoot</h2>
 	<ul class="ul-home" style="list-style-type:none;">
-		<li>Démarrez le logiciel ImgBurn.</li>
-		<img class="check3" src="https://hbf-files.github.io/imgburn.png" width="513" height="353">
-		<li>Sélectionnez "Write Image File To Disc".</li>
-		<img class="check3" src="https://hbf-files.github.io/imgb_write.png">
+		<li class="li-home">Insérez la carte mémoire contenant FreeMCBoot préinstallé dans votre console PlayStation 2.</li>
+		<li class="li-home">Allumez votre console PlayStation.</li>
+		<li class="li-home">Vérifiez que la version en haut à gauche est bien la version 1.966 (la dernière version en date).</li>
+		<img class="check3" src="https://hbf-files.github.io/fmcb-version.png">
+		<li class="li-home">Si votre version est inférieure à 1.966, continuez vers <a href="#update"><u>l'étape IV</u></a>.</li>
 	</ul>
-	<ul class="ul-home">
-		<li class="li-home">Cliquez sur l'icône de dossier sous source <img src="https://hbf-files.github.io/imgb_folder.png">.</li>
-		<li class="li-home">Sélectionnez l'ISO FreeDVDBoot selon votre modèle de console dans la section <u><a class="white-a" href="#prerequis">Prérequis</a></u>.</li>
-		<li class="li-home">Sélectionnez votre graveur de CD/DVD.</li>
-		<li class="li-home">Insérez un DVD-R.</li>
-		<li class="li-home">Ajoutez la vitesse la plus basse possible de votre lecteur CD/DVD</li>
-		<li class="li-home">Sélectionnez l'option "Write" en bas à gauche de la fenêtre.</li>
-		<img class="check3" src="https://hbf-files.github.io/imgb_write2.png">
-		<li class="li-home">Attendre la fin du processus de gravure.</li>
-	</ul>
-	<pre></pre>
-	<h2>III - Installation de FreeMCBoot (FMCB)</h2>
-	<p class="accueil">Nous allons maintenant procéder à l'installation du programme "FreeMCBoot" sur votre carte mémoire.</p>
-	<ul class="ul-home">
-		<li class="li-home">Insérez votre carte mémoire dans la fente 1 de votre PlayStation 2 ainsi que votre clé USB.</li>
-		<li class="li-home">Insérez le DVD-R que vous avez précédemment gravé dans le lecteur DVD de votre PlayStation 2.</li>
-		<li class="li-home">Autorisez la console à démarrer sur le DVD.</li>
-	</ul>
-	<ul class="ul-home" style="list-style-type:none;">
-		<li><i>Votre console devrait lancer le logiciel "uLaunchELF".</i></li>
-	</ul>
-	<ul class="ul-home">
-		<li class="li-home">A partir de là, sélectionnez "File Browser" en appuyant sur <img class="button" src="https://hbf-files.github.io/cercle.png" width="20" height="20">.</li>
-		<img class="check3" src="https://hbf-files.github.io/ule-filebrowser.png" width="535" height="399">
-	</ul>
-	<ul class="ul-home" style="list-style-type:none;">
-		<li>Sélectionnez <code>&ensp;mass:/&ensp;</code> en appuyant sur <img class="button" src="https://hbf-files.github.io/cercle.png" width="20" height="20">.</li>
-	</ul>
-	<ul class="ul-home">
-		<img class="check3" src="https://hbf-files.github.io/ule-mass.png" width="535" height="399">
-		<li class="li-home">Sélectionnez le fichier <code>&ensp;fmcbinstaller.elf&ensp;</code>.</li>
-	</ul>
-	<ul class="ul-home" style="list-style-type:none;">
-		<li><i>Le programme FreeMCBoot Installer devrait démarrer.</i></li>
-	</ul>
-	<ul class="ul-home">
-		<li class="li-home">Utilisez <img src="https://hbf-files.github.io/r1.png" width="20" height="20"> et <img src="https://hbf-files.github.io/l1.png" width="20" height="20"> pour naviguer jusqu'au menu "Utilitaire carte mémoire".</li>
-	</ul>
-	<div class="disclaimer">
-		<p class="indic-text">La prochaine étape effacera toutes les données de votre carte mémoire ! Veillez à faire une sauvegarde de cette dernière !</p>
-	</div>
-	<ul class="ul-home">
-		<li class="li-home">Cliquez sur "Formater CM" avec le bouton <img class="button" src="https://hbf-files.github.io/croix.png" width="20" height="20">.</li>
-		<img class="check3" src="https://hbf-files.github.io/fmcb-format.png" width="533" height="399">
-		<li class="li-home">Utilisez <img src="https://hbf-files.github.io/r1.png" width="20" height="20"> et <img src="https://hbf-files.github.io/l1.png" width="20" height="20"> pour naviguer jusqu'au menu "Confirmation" et sélectionnez "Normale".</li>
-		<img class="check3" src="https://hbf-files.github.io/fmcb-install.png" width="533" height="399">
-		<li class="li-home">Autorisez maintenant l'installation à se poursuivre.</li>
-	</ul>
-	<div class="indic">
-		<p class="indic-text">Vous venez à présent d'installer FreeMCBoot sur votre carte mémoire. Vous pouvez poursuivre vers <a href="https://guide.homebrewfrance.fr/finalisation/">fin de l'installation</a>.</p>
-	</div>
+
+
 </body>
 	<footer>
 		<p class="footer-p">SOURCE : <a class="white-a" href="https://github.com/homebrewfrance/guide"><img src="https://hbf-files.github.io/github.png" width="20" height="20"> <strong>GITHUB</strong></a></p>
