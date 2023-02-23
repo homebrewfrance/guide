@@ -145,3 +145,27 @@
 			text-align: center;
 			border-radius: 7px;
 		}
+		.head_ps2 {
+			padding-left: 20%;
+			padding-top: 65px;
+			padding-bottom: 25px;
+			color: white;
+			background-image: url(https://hbf-files.github.io/ps_bg.png);
+			text-shadow: 2px 2px 4px #000000;
+		}
+		.head_ns {
+			padding-left: 20%;
+			padding-top: 65px;
+			padding-bottom: 25px;
+			color: white;
+			background-image: url(https://hbf-files.github.io/ns_bg.png);
+			text-shadow: 2px 2px 4px #000000;
+		}
+		.head_ps3 {
+			padding-left: 20%;
+			padding-top: 65px;
+			padding-bottom: 25px;
+			color: white;
+			background-image: url(https://hbf-files.github.io/ps3_bg.png);
+			text-shadow: 2px 2px 4px #000000;
+		}
