@@ -23,7 +23,7 @@
 			margin: 15px;
 			color: white;
 		}
-		h2 {
+		h2, h4 {
 			color: white;
 			padding-left: 15%;
 			padding-right: 15%;
@@ -112,4 +112,36 @@
 		}
 		html {
 			scroll-behavior: smooth;
+		}
+		input {
+			background-color: #1b1b1b;
+			border-radius: 7px;
+			border: 1px solid #3f3f3f;
+			margin: 0px;
+			height: 60px;
+			width: 120px;
+		}
+		placeholder {
+			text-align: center;
+		}
+		form {  
+			color: white;
+			padding-left: 15%;
+			padding-right: 15%;
+		}
+		.input {
+			color:white;
+			background-color: #1b1b1b;
+		}
+		.submit {
+			color: white;
+		}
+		.xawselect {
+			background-color: #1b1b1b;
+			border: 1px solid #3f3f3f;
+			height: 60px;
+			width: 80px;
+			color: white;
+			text-align: center;
+			border-radius: 7px;
 		}
